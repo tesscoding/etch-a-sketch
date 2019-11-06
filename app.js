@@ -1,6 +1,8 @@
 let container=document.querySelector(".container");
-var gridSize=16;
-var cellHeight=100/gridSize;
+var gridSize=9;
+var headerHeight=10; //vh units
+var cellHeight=(100-headerHeight)/gridSize;
+var cellWidth=(100/gridSize);
 for(var i=0; i<gridSize; i++){
 	let row=document.createElement("div");
     row.style.height=cellHeight +"vh";
@@ -10,7 +12,7 @@ for(var i=0; i<gridSize; i++){
             var cell = document.createElement("div"); 
             cell.className = "cell"; 
             cell.style.height="100%";
-	        cell.style.width=cellHeight +"vh";
+	        cell.style.width=cellWidth +"vh";
 	        cell.style.border="thin black dashed";
 	        cell.style.display="inline-block";
             row.appendChild(cell); 
