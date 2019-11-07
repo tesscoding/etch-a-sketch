@@ -6,7 +6,10 @@
 
 .container{
 	height:100vh;
-	background-color:navy;
+	background-color:#31708E;
+		display:flex;
+	justify-content: center;
+	align-items:center;
 }
 
 
@@ -16,15 +19,22 @@ header{
 	align-items:center;
 	height:10vh;
 	text-align:center;
+	background-color:#F7F9FB;
 }
 
 button{
-	background-color:pink;
+	background-color:#5085A5;
 	height:50%;
-	width:20vh;
+	width:30vh;
+	font-size:1.5rem;
+	font-family:arial;
+	color:#F7F9FB;
+	border-radius:3px;
 }
 
 button:hover{
-	background-color:white;
-	box-shadow:outset 5px 5px 5px 5px gold;
+	background-color:#8FC1E3;
+	/**box-shadow:offset 5px 5px 5px 5px gold;**/
+	
+
 }
